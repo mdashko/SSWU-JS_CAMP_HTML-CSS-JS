@@ -1,0 +1,83 @@
+@import "variables";
+
+body {
+	width: 100%;
+	color: $commonTextClr;
+	font-family: $commonFonts;
+	line-height: 1.667;
+	background-color: $bodyClr;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+input {
+	border: none;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+}
+
+.customizer_btn {
+	border-radius: 1.5em 0;
+	width: 6em;
+	height: 2em;
+	color: $btnTextClr;
+	background-color: $sectionBtnClr;
+}
+
+.customizer_carousel-btn {
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	outline: none;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 1.5em;
+	box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+.scale-img {
+	transform: scale(1.5);
+	transition: transform 0.5s ease-in-out;
+}
+
+.error-text {
+	font-size: 0.5em;
+	color: #ff0000;
+	margin: 0 3.5em;
+	visibility: hidden;
+}
+
+.error-input {
+	border: 0.1em solid #ff0000;
+	box-shadow: 0 1em 2em rgba(223, 105, 81, 0.3);
+}
+
+.nonactive-btn {
+	color: $btnTextClr;
+	background-color: $sectionBtnClr;
+}
+
+.active-btn {
+	background-color: $sectionBtnClrHover;
+	color: $btnTextClrHover;
+}

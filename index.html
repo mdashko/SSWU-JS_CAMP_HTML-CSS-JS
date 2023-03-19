@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DECBASE</title>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600&family=Raleway:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles/styles.css" />
+	</head>
+	<body>
+		<div class="loading">
+			<img src="./imgs/logo-sym.png" alt="symbol" />
+			<div>
+				<span style="--i: 1">D</span>
+				<span style="--i: 2">E</span>
+				<span style="--i: 3">C</span>
+				<span style="--i: 4">B</span>
+				<span style="--i: 5">A</span>
+				<span style="--i: 6">S</span>
+				<span style="--i: 7">E</span>
+			</div>
+		</div>
+		<div class="weather-container">
+			<img class="weather-container_img" src="" alt="" />
+			<div class="weather-container__text">
+				<p class="weather-container__text_temp">Temperature</p>
+				<p class="weather-container__text_weather">Weather Description</p>
+			</div>
+		</div>
+		<header class="header">
+			<img class="header_logo" src="./imgs/logo.svg" alt="logo" />
+			<div class="header_navigation">
+				<nav class="header_navigation__container">
+					<a class="header_navigation__container_item" href="/">HOME</a>
+					<a class="header_navigation__container_item" href="#">PROJECT</a>
+					<a class="header_navigation__container_item" href="#services"
+						>SERVICES</a
+					>
+					<a class="header_navigation__container_item" href="#about">ABOUT</a>
+					<a class="header_navigation__container_item" href="#blog">BLOG</a>
+					<a class="header_navigation__container_item" href="#">SHOP</a>
+					<a class="header_navigation__container_item" href="#">CONTACT</a>
+				</nav>
+				<button class="customizer_btn header_navigation_btn">Sign Up</button>
+			</div>
+			<div class="header__progress-bar">
+				<div class="header__progress-bar__filled"></div>
+			</div>
+		</header>
+		<main>
+			<section class="hero">
+				<img class="hero_deco" src="./imgs/deco.svg" alt="deco" />
+				<div class="hero_descr-container">
+					<p class="hero_descr-container_pre-heading">MODERN INTERIOR</p>
+					<h1 class="hero_descr-container_heading">
+						Create Your <br />
+						Interior Design.
+					</h1>
+					<p class="hero_descr-container_descr">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation.
+					</p>
+					<button class="customizer_btn hero_descr-container_btn">
+						CONTACT
+					</button>
+				</div>
+				<div class="hero_imgs-container">
+					<img
+						class="hero_imgs-container_deco"
+						src="./imgs/pic-deco.svg"
+						alt="decoration"
+					/>
+					<img
+						class="hero_imgs-container_living-room"
+						src="./imgs/living-room-pic.svg"
+						alt="living room"
+					/>
+				</div>
+			</section>
+			<section id="services" class="services">
+				<p class="services_pre-heading">WHAT WE DO</p>
+				<h2 class="services_heading">Our Service</h2>
+				<div class="services__menu">
+					<button class="services__menu_btn all-btn active-btn">ALL</button>
+					<button class="services__menu_btn design-btn nonactive-btn">
+						INTERIOR DESIGN
+					</button>
+					<button class="services__menu_btn architecture-btn nonactive-btn">
+						ARCHITECTURE
+					</button>
+					<button class="services__menu_btn planning-btn nonactive-btn">
+						PLANNING
+					</button>
+				</div>
+				<div class="services__container"></div>
+			</section>
+			<section id="about" class="about">
+				<img class="about_deco" src="./imgs/deco.svg" alt="deco" />
+				<div class="about__imgs-container">
+					<img
+						class="about__imgs-container_deco"
+						src="./imgs/pic-deco.svg"
+						alt="decoration"
+					/>
+					<img
+						class="about__imgs-container_living-room-2"
+						src="./imgs/living-room-pic-2.svg"
+						alt="sofa"
+					/>
+				</div>
+				<div class="about__descr-container">
+					<p class="about__descr-container_pre-heading">ABOUT US</p>
+					<h2 class="about__descr-container_heading">
+						Interioris The Will <br />
+						of An Epoch Mextreo
+					</h2>
+					<p class="about__descr-container_descr">
+						There are many variations of passages of Lorem Ipsum available, but
+						the majority have suffered alteration in some form injected humour,
+						or randomised words which don't look even slightly believable.If you
+						are going to use a passage of Lorem Ipsum, sure there isn't anything
+						embarrassing hidden the middleof text. All the Lorem Ipsum
+						generators on the Internettend to repeat predefined chunks as
+						necessary,making this the first true generator on the Internet.
+					</p>
+					<button class="customizer_btn about__descr-container_btn">
+						LEARN MORE
+					</button>
+				</div>
+			</section>
+			<section class="anniversary">
+				<div class="anniversary__descr-container">
+					<h1 class="anniversary__descr-container_number">20</h1>
+					<h2 class="anniversary__descr-container_heading">
+						Years Of Successful Working <br />
+						The Market
+					</h2>
+					<button class="customizer_btn anniversary__descr-container_btn">
+						READ MORE
+					</button>
+				</div>
+				<div class="anniversary__imgs-container">
+					<img
+						class="anniversary__imgs-container_deco"
+						src="./imgs/pic-deco.svg"
+						alt="decoration"
+					/>
+					<img
+						class="anniversary__imgs-container_book-shelves"
+						src="./imgs/book-shelves-pic.svg"
+						alt="book shelves"
+					/>
+				</div>
+			</section>
+			<section class="work">
+				<h2 class="work_heading">
+					3000+ Completed Work <br />
+					Which WE Have Successfully Done
+				</h2>
+				<div class="work__schema-container">
+					<div
+						class="work__schema-container__item-container work__schema-container__projects-cell"
+					>
+						<h3>980</h3>
+						<p>Projects</p>
+					</div>
+					<img
+						class="work__schema-container__item-container_line-1"
+						src="./imgs/vector-1.svg"
+						alt="line"
+					/>
+					<div
+						class="work__schema-container__item-container work__schema-container__happy-client-cell"
+					>
+						<h3>520</h3>
+						<p>Happy Client</p>
+					</div>
+					<img
+						class="work__schema-container__item-container_line-2"
+						src="./imgs/vector-2.svg"
+						alt="line"
+					/>
+					<div
+						class="work__schema-container__item-container work__schema-container__winners-cell"
+					>
+						<h3>330</h3>
+						<p>Winners</p>
+					</div>
+					<img
+						class="work__schema-container__item-container_line-3"
+						src="./imgs/vector-3.svg"
+						alt="line"
+					/>
+					<div
+						class="work__schema-container__item-container work__schema-container__recoment-cell"
+					>
+						<h3>120</h3>
+						<p>Recoment</p>
+					</div>
+				</div>
+			</section>
+			<section class="testimonials">
+				<p class="testimonials_pre-heading">TESTIMONIALS</p>
+				<h2 class="testimonials_heading">Client says about us</h2>
+				<div class="testimonials__btns-container">
+					<button
+						class="customizer_carousel-btn testimonials__btns-container_left-btn"
+					>
+						<img src="./imgs/left-arrow.svg" alt="left button" />
+					</button>
+					<button
+						class="customizer_carousel-btn testimonials__btns-container_right-btn"
+					>
+						<img src="./imgs/right-arrow.svg" alt="right button" />
+					</button>
+				</div>
+				<div class="swiper Swiper">
+					<div
+						class="swiper-wrapper swiper-container testimonials__members-container"
+					>
+						<!-- Louis Saville -->
+						<div class="testimonials__members-container__member swiper-slide">
+							<img
+								class="testimonials__members-container__member_picture"
+								src="./imgs/louis-saville.svg"
+								alt="Louis Saville"
+							/>
+							<img
+								class="testimonials__members-container__member_deco"
+								src="./imgs/slider-deco.svg"
+								alt="decoration"
+							/>
+							<p class="testimonials__members-container__member_info">
+								<span class="testimonials__members-container__member_info_name"
+									>Louis Saville </span
+								>/CEO at Google inc
+							</p>
+							<p class="testimonials__members-container__member_descr">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+						<!-- Rekha Varadwaz -->
+						<div class="testimonials__members-container__member swiper-slide">
+							<img
+								class="testimonials__members-container__member_picture"
+								src="./imgs/rekha-varadwaz.svg"
+								alt="Rekha Varadwaz"
+							/>
+							<img
+								class="testimonials__members-container__member_deco"
+								src="./imgs/slider-deco.svg"
+								alt="decoration"
+							/>
+							<p class="testimonials__members-container__member_info">
+								<span class="testimonials__members-container__member_info_name"
+									>Rekha Varadwaz </span
+								>/Manager at Nike inc
+							</p>
+							<p class="testimonials__members-container__member_descr">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+						<!-- SMB2 -->
+						<div class="testimonials__members-container__member swiper-slide">
+							<img
+								class="testimonials__members-container__member_picture"
+								src="./imgs/SMB2.svg"
+								alt="SMB2"
+							/>
+							<img
+								class="testimonials__members-container__member_deco"
+								src="./imgs/slider-deco.svg"
+								alt="decoration"
+							/>
+							<p class="testimonials__members-container__member_info">
+								<span class="testimonials__members-container__member_info_name"
+									>SMB2 </span
+								>/CEO at Google inc
+							</p>
+							<p class="testimonials__members-container__member_descr">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+
+						<!-- SMB3 -->
+						<div class="testimonials__members-container__member swiper-slide">
+							<img
+								class="testimonials__members-container__member_picture"
+								src="./imgs/SMB3.svg"
+								alt="SMB3"
+							/>
+							<img
+								class="testimonials__members-container__member_deco"
+								src="./imgs/slider-deco.svg"
+								alt="decoration"
+							/>
+							<p class="testimonials__members-container__member_info">
+								<span class="testimonials__members-container__member_info_name"
+									>SMB3 </span
+								>/CEO at Google inc
+							</p>
+							<p class="testimonials__members-container__member_descr">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+						<!-- SMB4 -->
+						<div class="testimonials__members-container__member swiper-slide">
+							<img
+								class="testimonials__members-container__member_picture"
+								src="./imgs/SMB4.svg"
+								alt="SMB4"
+							/>
+							<img
+								class="testimonials__members-container__member_deco"
+								src="./imgs/slider-deco.svg"
+								alt="decoration"
+							/>
+							<p class="testimonials__members-container__member_info">
+								<span class="testimonials__members-container__member_info_name"
+									>SMB3 </span
+								>/CEO at Google inc
+							</p>
+							<p class="testimonials__members-container__member_descr">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+						<!-- SMB5 -->
+						<div class="testimonials__members-container__member swiper-slide">
+							<img
+								class="testimonials__members-container__member_picture"
+								src="./imgs/SMB5.svg"
+								alt="SMB5"
+							/>
+							<img
+								class="testimonials__members-container__member_deco"
+								src="./imgs/slider-deco.svg"
+								alt="decoration"
+							/>
+							<p class="testimonials__members-container__member_info">
+								<span class="testimonials__members-container__member_info_name"
+									>SMB3 </span
+								>/CEO at Google inc
+							</p>
+							<p class="testimonials__members-container__member_descr">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="blog" class="blog">
+				<img class="blog_deco" src="./imgs/deco.svg" alt="deco" />
+				<p class="blog_pre-heading">LETEST NEWS</p>
+				<h2 class="blog_heading">From Our Blog</h2>
+				<div class="blog__news-container">
+					<div class="blog__news-container__item reveal">
+						<div class="blog__news-container__item__imgs-container">
+							<img
+								class="blog__news-container__item__imgs-container_deco"
+								src="./imgs/pic-deco.svg"
+								alt="decoration"
+							/>
+							<img
+								class="blog__news-container__item__imgs-container_pic"
+								src="/imgs/mirror-pic.svg"
+								alt="mirror"
+							/>
+							<h3 class="overlay-text blog__news-container__item_heading">
+								2020 Interior Design Trends
+							</h3>
+						</div>
+						<h3 class="blog__news-container__item_heading">
+							2020 Interior Design Trends
+						</h3>
+						<p class="blog__news-container__item_descr">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod incididunt ut labore et dolore magna aliqua.
+						</p>
+						<button class="customizer_btn blog__news-container__item_btn">
+							CONTINUE READING....
+						</button>
+					</div>
+					<div class="blog__news-container__item reveal">
+						<div class="blog__news-container__item__imgs-container">
+							<img
+								class="blog__news-container__item__imgs-container_deco"
+								src="./imgs/pic-deco.svg"
+								alt="decoration"
+							/>
+							<img
+								class="blog__news-container__item__imgs-container_pic"
+								src="./imgs/bedroom-pic.svg"
+								alt="bedroom"
+							/>
+							<h3 class="overlay-text blog__news-container__item_heading">
+								28 Notable Product at ARC Interior Design
+							</h3>
+						</div>
+						<h3 class="blog__news-container__item_heading">
+							28 Notable Product at ARC Interior Design
+						</h3>
+						<p class="blog__news-container__item_descr">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod incididunt ut labore et dolore magna aliqua.
+						</p>
+						<button class="customizer_btn blog__news-container__item_btn">
+							CONTINUE READING....
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="form-container">
+				<h2 class="form-container_heading">DON’T FORGET TO SIGN UP</h2>
+				<img
+					class="form-container_line"
+					src="./imgs/line-deco.svg"
+					alt="decoration"
+				/>
+				<p class="form-container_descr">
+					Find out early about all upcoming promotions and new product releases
+					with our newsletter.
+				</p>
+				<form action="#" class="form-container__form" onsubmit="return false">
+					<div class="form-container__form__full-name-container">
+						<div style="display: flex; flex-direction: column">
+							<input
+								class="form-container__form__full-name-container_input form-container__form__full-name-container_input-name"
+								type="text"
+								placeholder="Enter your name....."
+							/>
+							<p class="error-text-name error-text">Invalid name</p>
+						</div>
+						<div style="display: flex; flex-direction: column">
+							<input
+								class="form-container__form__full-name-container_input form-container__form__full-name-container_input-surname"
+								type="text"
+								placeholder="Enter your surname....."
+							/>
+							<p class="error-text-surname error-text">Invalid surname</p>
+						</div>
+					</div>
+					<div style="display: flex; flex-direction: column">
+						<input
+							class="form-container__form_input"
+							type="email"
+							placeholder="Enter your e-mail....."
+						/>
+						<p class="error-text-email error-text" style="margin: 0.4em">
+							Invalid email
+						</p>
+					</div>
+					<button type="submit" class="customizer_btn form-container__form_btn">
+						SUBSCRIBE
+					</button>
+				</form>
+			</section>
+		</main>
+		<footer class="footer">
+			<img class="footer_deco" src="./imgs/deco.svg" alt="deco" />
+			<div class="footer__first-part">
+				<div class="footer__first-part__logo-container">
+					<img
+						class="footer__first-part__logo-container_logo"
+						src="./imgs/logo.svg"
+						alt="logo"
+					/>
+					<p class="footer__first-part__logo-container_descr">
+						But i must explain to you all this mistaken idea of dencouncing
+						pleasure.
+					</p>
+				</div>
+				<div class="footer__first-part__contacts-container">
+					<div>
+						<p class="footer__first-part__contacts-container_heading">
+							Quick Links
+						</p>
+						<p>About Our Company</p>
+						<p>Services WE provide</p>
+						<p>Career & Opportunity</p>
+						<p>Privacy & policy</p>
+						<p>Contact US</p>
+					</div>
+					<div>
+						<p class="footer__first-part__contacts-container_heading">
+							Company
+						</p>
+						<p>About Company</p>
+						<p>Our Testimonials</p>
+						<p>Latest News</p>
+						<p>Our misson</p>
+						<p>Get a free Quot</p>
+					</div>
+					<div>
+						<p class="footer__first-part__contacts-container_heading">
+							Contact us
+						</p>
+						<p>Sagrada Familia, Herba</p>
+						<p>Street Front USA</p>
+						<p>brandoxide@gmail.com</p>
+						<p>002-568423591</p>
+					</div>
+				</div>
+				<div class="footer__first-part__social-media-container">
+					<p class="footer__first-part__social-media-container_heading">
+						Follow Us
+					</p>
+					<ul class="footer__first-part__social-media-container_lst">
+						<li class="footer__first-part__social-media-container_lst_item">
+							<a href="https://www.facebook.com"
+								><img src="./imgs/facebook-ico.svg" alt="facebook"
+							/></a>
+						</li>
+						<li class="footer__first-part__social-media-container_lst_item">
+							<a href="https://www.twitter.com"
+								><img src="./imgs/twitter-ico.svg" alt="twitter"
+							/></a>
+						</li>
+						<li class="footer__first-part__social-media-container_lst_item">
+							<a href="https://www.instagram.com"
+								><img src="./imgs/instagram-ico.svg" alt="instagram"
+							/></a>
+						</li>
+						<li class="footer__first-part__social-media-container_lst_item">
+							<a href="https://www.linkedin.com"
+								><img src="./imgs/linkedin-ico.svg" alt="linkedin"
+							/></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer__second-part">
+				<p>
+					Copyright @ <span class="footer__second-part_curr-year">2020 </span
+					><span style="color: #37806b"> Brandoxide</span>.all right reserved.
+				</p>
+			</div>
+		</footer>
+
+		<div id="greetingWindow" class="window-container">
+			<h1 class="window-container_greeting">
+				Hello,
+				<span class="window-container_greeting_username">username</span>!
+			</h1>
+			<p class="window-container_text">
+				Today,
+				<span class="window-container_text_date">today</span>, specially for you
+				<span class="window-container_text_discount">120%</span> discount!
+			</p>
+		</div>
+
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="./js/swiper.js"></script>
+		<script src="./js/blog.js"></script>
+		<script src="./js/progress-bar.js"></script>
+		<script type="module" src="./js/form-validation.js"></script>
+		<script src="./js/copyright.js"></script>
+		<script type="module" src="./js/services.js"></script>
+		<script src="./js/weather.js"></script>
+		<script src="./js/loading-page.js"></script>
+		<script src="./js/inactive.js"></script>
+	</body>
+</html>

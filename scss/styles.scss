@@ -1,0 +1,592 @@
+@import "globals";
+@import "variables";
+@import "greeting";
+@import "blog";
+@import "weather";
+@import "loading";
+@import "responsive";
+//1320 x 461
+.header {
+	display: flex;
+	justify-content: space-around;
+	padding: 0.5em 5.5em;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: $headerClr;
+	transition: top 0.8s ease-in-out;
+	&_navigation {
+		display: flex;
+		justify-content: space-evenly;
+		&__container {
+			margin: 1em;
+			&_item {
+				display: inline-block;
+				border-bottom: 0.1em solid transparent;
+				font-family: $headerFont;
+				color: $navItemClr;
+				margin: 0 1em;
+				&:hover {
+					color: $navItemClrHover;
+					border-bottom: 0.1em solid $navItemClrHover;
+					transition: all 0.5s ease-out;
+				}
+			}
+		}
+		&_btn {
+			align-self: center;
+			background-color: $headerBtnClr;
+			font-family: $headerBtnFont;
+			font-weight: 600;
+		}
+	}
+	&__progress-bar {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 0.25em;
+
+		&__filled {
+			width: 0;
+			height: 100%;
+			background-color: $progressBarClr;
+		}
+	}
+}
+
+.hero {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	margin: 15em 9.5em;
+	background-color: $commonSectionClr;
+	&_descr-container {
+		width: 45%;
+		display: flex;
+		flex-direction: column;
+		&_heading {
+			font-weight: 600;
+			font-size: 3.5em;
+			font-family: $headingFonts;
+			color: $headingClr;
+		}
+		&_descr {
+			width: 85%;
+		}
+		&_btn {
+			width: 9em;
+			height: 3em;
+			margin: 5.5em 0;
+		}
+	}
+	&_imgs-container {
+		width: 50%;
+		position: relative;
+		&_deco {
+			position: relative;
+			width: 100%;
+			top: 0;
+			right: 0;
+		}
+		&_living-room {
+			position: absolute;
+			width: 95%;
+			height: 95%;
+			top: -10%;
+			right: 10%;
+			transition: transform 0.7s ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+	&_deco {
+		position: absolute;
+		left: -20%;
+		bottom: 0;
+	}
+}
+
+.services {
+	display: flex;
+	flex-direction: column;
+	margin: 5.5em 9.5em;
+	&_heading {
+		font-weight: 400;
+		font-size: 2em;
+		font-family: $headingFonts;
+		color: $headingClr;
+	}
+	&__menu {
+		width: 60%;
+		display: flex;
+		justify-content: space-between;
+		&_btn {
+			margin: 1em;
+			border-radius: 20px;
+			width: 12em;
+			height: 3em;
+			font-size: 70%;
+			font-weight: 700;
+			border: 0.5em solid $borderClr;
+			&:hover {
+				background-color: $sectionBtnClrHover;
+				border-color: $borderClr;
+				border-width: 0.2em;
+				color: $btnTextClrHover;
+			}
+		}
+	}
+	&__container {
+		display: flex;
+		justify-content: space-evenly;
+		align-content: center;
+		flex-wrap: wrap;
+		margin: 5em 2.5em;
+		&__item {
+			display: flex;
+			justify-content: space-around;
+			align-items: flex-start;
+			box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.14);
+			border-radius: 4em 0;
+			width: 25em;
+			height: 5.5em;
+			padding: 2em 1em;
+			margin: 5em 0.5em;
+			font-size: 0.7em;
+			&_img {
+				width: 2em;
+				margin: 0 0.5em;
+			}
+		}
+	}
+}
+
+.about {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	margin: 5.5em 9.5em 10.5em;
+	&__imgs-container {
+		width: 60%;
+		position: relative;
+		&_deco {
+			width: 75%;
+			top: 0;
+			right: 0;
+			position: relative;
+		}
+		&_living-room-2 {
+			position: absolute;
+			width: 75%;
+			height: 85%;
+			top: 10%;
+			left: 10%;
+			transition: transform 0.7s ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+	&__descr-container {
+		width: 50%;
+		&_heading {
+			font-weight: 400;
+			font-size: 2em;
+			font-family: $headingFonts;
+			color: $headingClr;
+		}
+		&_descr {
+			width: 70%;
+		}
+		&_btn {
+			width: 9em;
+			height: 3em;
+			margin: 5.5em 0;
+		}
+	}
+	&_deco {
+		position: absolute;
+		right: -20%;
+		top: -30%;
+	}
+}
+
+.anniversary {
+	display: flex;
+	justify-content: space-around;
+	margin: 10em 9.5em;
+	&__descr-container {
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+		align-items: self-start;
+		justify-content: center;
+		&_number {
+			font-size: 10em;
+			background: url("/imgs/wooden-texture.png") no-repeat;
+			background-clip: text;
+			color: transparent;
+		}
+		&_heading {
+			font-weight: 400;
+			font-size: 2.5em;
+			letter-spacing: 0.1em;
+			font-family: $headingFonts;
+			color: $headingClr;
+			width: 90%;
+		}
+		&_btn {
+			width: 9em;
+			height: 3em;
+			margin: 5.5em 0;
+		}
+	}
+	&__imgs-container {
+		width: 50%;
+		position: relative;
+		&_deco {
+			height: 65%;
+			width: 90%;
+			top: 0;
+			right: 0;
+			position: relative;
+		}
+		&_book-shelves {
+			position: absolute;
+			width: 80%;
+			height: 80%;
+			top: -15%;
+			left: -15%;
+			transition: transform 0.7s ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
+.work {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: $sectionClr;
+	color: $headingClr;
+	padding: 1.5em 7em 10em;
+	height: 20em;
+	&_heading {
+		margin: 0 0 2.5em;
+		font-weight: 300;
+		font-size: 2em;
+		font-family: $headingFonts;
+		text-align: center;
+	}
+	&__schema-container {
+		display: flex;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		&__item-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 7.5em;
+			height: 7.5em;
+			background-color: $commonSectionClr;
+			box-shadow: 0 0.8em 1em rgba(0, 0, 0, 0.1);
+			border-radius: 2.5em 0;
+			z-index: 1;
+		}
+		&__projects-cell {
+			position: absolute;
+			left: -30%;
+		}
+		&_line-1 {
+			position: absolute;
+			color: red;
+			top: 0;
+			left: 5%;
+		}
+		&__happy-client-cell {
+			position: absolute;
+			bottom: -8em;
+			left: 15%;
+		}
+		&__winners-cell {
+			position: absolute;
+			right: 20%;
+		}
+		&__recoment-cell {
+			position: absolute;
+			right: -16%;
+			bottom: -8em;
+		}
+	}
+}
+
+.testimonials {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5.5em 3em;
+	position: relative;
+	&_heading {
+		font-weight: 400;
+		font-size: 2em;
+		font-family: $headingFonts;
+		color: $headingClr;
+	}
+	&__btns-container {
+		display: flex;
+		margin: 2em 0;
+		align-self: flex-end;
+		&_left-btn {
+			background-color: $leftBtnClr;
+		}
+		&_right-btn {
+			background-color: $rightBtnClr;
+		}
+	}
+	&__members-container {
+		display: flex;
+		justify-content: space-between;
+		margin: 5.5em 0;
+		padding: 0 5.5em;
+		&__member {
+			position: relative;
+			box-shadow: 0.5em 0.5em 1.5em 0.5em rgba(66, 96, 84, 0.15);
+			border-radius: 4em 0;
+			display: flex;
+			flex-direction: column;
+			padding: 3em 2em;
+			font-size: 0.01em;
+			&_picture {
+				position: absolute;
+				top: 20%;
+				left: -19%;
+				width: 5.5em;
+			}
+			&_deco {
+				position: absolute;
+				top: 15%;
+				right: 5%;
+				height: 1.5em;
+			}
+			&_info_name {
+				font-size: 1.5em;
+				color: $headingClr;
+				font-weight: 600;
+			}
+			&_descr {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.blog {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2em 9em;
+	background-color: $sectionClr;
+	&_heading {
+		font-weight: 400;
+		font-size: 2em;
+		font-family: $headingFonts;
+		color: $headingClr;
+		margin: 0 0 5em;
+	}
+	&__news-container {
+		display: flex;
+		justify-content: space-evenly;
+		&__item {
+			width: 40%;
+			&__imgs-container {
+				position: relative;
+				&_deco {
+					height: 20em;
+					width: 90%;
+					position: relative;
+				}
+				.overlay-text {
+					visibility: hidden;
+					position: absolute;
+					text-align: center;
+					top: 40%;
+					left: 37%;
+					transform: translate(-50%, -50%);
+				}
+				&_pic {
+					position: absolute;
+					top: -20%;
+					left: -10%;
+					width: 90%;
+					height: 25em;
+					transition: transform 0.7s ease-in-out;
+					&:hover {
+						transform: scale(1.1);
+						opacity: 0.5;
+					}
+				}
+				&:hover .overlay-text {
+					visibility: visible;
+				}
+			}
+
+			&_heading {
+				color: $headingClr;
+				margin: 1em;
+				font-weight: 400;
+				font-family: $headingFonts;
+			}
+			&_descr {
+				margin: 1em;
+			}
+			&_btn {
+				margin: 1em;
+				width: 17em;
+				height: 3em;
+			}
+		}
+	}
+	&_deco {
+		position: absolute;
+		bottom: -10%;
+		right: 0;
+	}
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 9.5em;
+	&_heading {
+		letter-spacing: 0.2em;
+		font-size: 2em;
+		font-family: $headingFonts;
+		color: $headingClr;
+	}
+	&_line {
+		width: 40%;
+		margin: 1em 0;
+	}
+	&_descr {
+		text-align: center;
+		width: 45%;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 2em 0;
+		&__full-name-container {
+			display: flex;
+			&_input {
+				background-color: $inputClr;
+				border-radius: 1.5em 0;
+				width: 20em;
+				height: 4em;
+				font-family: $inputFonts;
+				padding: 0 1.5em;
+				margin: 1.5em 2em 0.5em;
+			}
+		}
+		&_input {
+			background-color: $inputClr;
+			border-radius: 1.5em 0;
+			font-family: $inputFonts;
+			padding: 0 1.5em;
+			margin: 2em 0 0.5em;
+			width: 47em;
+			height: 4em;
+		}
+		&_btn {
+			border-radius: 0 0 1.5em 0;
+			width: 12em;
+			height: 3em;
+		}
+	}
+}
+
+.footer {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	font-family: $footerFonts;
+	background-color: $footerClr;
+	padding: 3em 0;
+	font-size: 0.8em;
+	&__first-part {
+		display: flex;
+		justify-content: space-around;
+		&__logo-container {
+			width: 15%;
+			&_descr {
+				font-size: 0.6em;
+				width: 95%;
+			}
+		}
+		&__contacts-container {
+			width: 40%;
+			display: flex;
+			justify-content: space-between;
+			&_heading {
+				color: $headingClr;
+				font-weight: 600;
+				margin: 0 0 0.5em;
+			}
+		}
+		&__social-media-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			&_heading {
+				color: $headingClr;
+				font-weight: 600;
+				margin: 0 0 0.5em;
+			}
+			&_lst {
+				display: flex;
+				margin: 0.5em 0;
+				&_item {
+					margin: 0 0.5em;
+				}
+			}
+		}
+	}
+	&__second-part {
+		text-align: center;
+		margin: 2em 0 0;
+	}
+	&_deco {
+		position: absolute;
+		top: -50%;
+		left: 0;
+	}
+}
+//SWIPER
+.swiper {
+	width: 1000px;
+	@media (max-width: 760px) {
+		width: 400px;
+	}
+}
+
+.swiper-wrapper {
+	padding: 0 10em;
+}
+
+.swiper-slide {
+	width: 20%;
+	height: 5em;
+}

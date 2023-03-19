@@ -1,0 +1,27 @@
+@import "globals";
+@import "variables";
+
+.weather-container {
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 0 2em;
+	background-color: #37806b;
+	opacity: 0.6;
+	z-index: 10;
+	color: $weatherTextClr;
+	width: 18em;
+	&_img {
+		margin: 1em;
+		height: 3em;
+	}
+	&__text {
+		display: flex;
+		flex-direction: column;
+		margin: 0.5em 1em;
+		&_temp {
+			font-weight: 600;
+		}
+	}
+}

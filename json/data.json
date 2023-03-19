@@ -1,0 +1,54 @@
+{
+	"design": [
+		{
+			"Interior Design1": "Interior Design1 Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+		},
+		{
+			"Interior Design2": "Interior Design2 Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+		},
+		{
+			"Interior Design3": "Interior Design3 Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+		},
+		{
+			"Interior Design4": "Interior Design4 Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+		},
+		{
+			"Interior Design5": "Interior Design5 Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+		}
+	],
+
+	"architecture": [
+		{
+			"Architecture1": "Architecture1 Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+		},
+		{
+			"Architecture2": "Architecture2 Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+		},
+		{
+			"Architecture3": "Architecture3 Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+		},
+		{
+			"Architecture4": "Architecture4 Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+		},
+		{
+			"Architecture5": "Architecture5 Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+		}
+	],
+	"planning": [
+		{
+			"Planning1": "Planning1 Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+		},
+		{
+			"Planning2": "Planning2 Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+		},
+		{
+			"Planning3": "Planning3 Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+		},
+		{
+			"Planning4": "Planning4 Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+		},
+		{
+			"Planning5": "Planning5 Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore."
+		}
+	]
+}
