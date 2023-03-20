@@ -210,7 +210,8 @@
 	}
 	&_deco {
 		position: absolute;
-		right: -20%;
+		width: 15%;
+		right: -12%;
 		top: -30%;
 	}
 }
@@ -365,7 +366,7 @@
 			display: flex;
 			flex-direction: column;
 			padding: 3em 2em;
-			font-size: 0.01em;
+			font-size: 2%;
 			&_picture {
 				position: absolute;
 				top: 20%;
@@ -576,9 +577,9 @@
 }
 //SWIPER
 .swiper {
-	width: 1000px;
+	width: 50em;
 	@media (max-width: 760px) {
-		width: 400px;
+		width: 20em;
 	}
 }
 
@@ -587,6 +588,6 @@
 }
 
 .swiper-slide {
-	width: 20%;
+	width: 25%;
 	height: 5em;
 }

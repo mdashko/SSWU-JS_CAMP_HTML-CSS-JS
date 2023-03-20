@@ -510,8 +510,8 @@ button {
   background-color: #37806b;
   opacity: 0.6;
   z-index: 10;
-  color: #fff;
   width: 18em;
+  color: #fff;
 }
 .weather-container_img {
   margin: 1em;
@@ -888,7 +888,8 @@ button {
             flex-direction: column;
   }
   .anniversary__descr-container {
-    text-align: center;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
   }
   .anniversary__imgs-container {
     display: none;
@@ -1197,7 +1198,8 @@ button {
 }
 .about_deco {
   position: absolute;
-  right: -20%;
+  width: 15%;
+  right: -12%;
   top: -30%;
 }
 
@@ -1415,7 +1417,7 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 3em 2em;
-  font-size: 0.01em;
+  font-size: 2%;
 }
 .testimonials__members-container__member_picture {
   position: absolute;
@@ -1678,11 +1680,11 @@ button {
 }
 
 .swiper {
-  width: 1000px;
+  width: 50em;
 }
 @media (max-width: 760px) {
   .swiper {
-    width: 400px;
+    width: 20em;
   }
 }
 
@@ -1691,6 +1693,6 @@ button {
 }
 
 .swiper-slide {
-  width: 20%;
+  width: 25%;
   height: 5em;
 }/*# sourceMappingURL=styles.css.map */

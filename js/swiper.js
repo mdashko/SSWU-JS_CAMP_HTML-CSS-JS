@@ -8,11 +8,10 @@ const nextBtn = document.querySelector(
 
 var swiper = new Swiper(imgSwiper, {
 	slidesPerView: 1,
-	spaceBetween: 110,
+	spaceBetween: 50,
+	//centeredSlides: true,
 	roundLengths: true,
-	//slidesPerGroup: 2,
 	loop: true,
-	loopFillGroupWithBlank: true,
 	navigation: {
 		nextEl: nextBtn,
 		prevEl: prevBtn,
